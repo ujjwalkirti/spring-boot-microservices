@@ -5,19 +5,19 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
-import com.pm.patient_service.dto.PatientRequestDTO;
-import com.pm.patient_service.exception.EmailAlreadyExistsException;
-import com.pm.patient_service.exception.PatientNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.pm.patient_service.dto.PatientRequestDTO;
 import com.pm.patient_service.dto.PatientResponseDTO;
+import com.pm.patient_service.exception.EmailAlreadyExistsException;
+import com.pm.patient_service.exception.PatientNotFoundException;
 import com.pm.patient_service.mapper.PatientMapper;
 import com.pm.patient_service.model.Patient;
 import com.pm.patient_service.repository.PatientRepository;
 
 @Service
 public class PatientService {
-    private PatientRepository patientRepository;
+    private final PatientRepository patientRepository;
 
     public PatientService(PatientRepository patientRepository) {
         this.patientRepository = patientRepository;

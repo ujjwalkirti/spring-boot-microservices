@@ -5,10 +5,8 @@ import java.util.UUID;
 
 import com.pm.patient_service.dto.PatientRequestDTO;
 import com.pm.patient_service.dto.validators.CreatePatientValidationGroup;
-import com.pm.patient_service.model.Patient;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;
 import jakarta.validation.groups.Default;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
